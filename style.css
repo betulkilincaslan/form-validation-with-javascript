@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+form > h1 {
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+  color: rgba(245, 245, 245, 0.849);
+}
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.form-body > div {
+  margin-top: 10px;
+}
+.form-body div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-body div label {
+  padding-left: 10px;
+  color: rgb(167, 167, 167);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+form > div > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+form > div > div:nth-child(5) button {
+  width: 100%;
+  background-color: rgb(223, 50, 28);
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgb(69, 69, 69);
+  transition: all 0.5s ease;
+}
+form > div > div:nth-child(5) button:hover {
+  background-color: rgb(96, 21, 177);
+  color: rgb(223, 50, 28);
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.74);
+  color: rgb(45, 45, 44);
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+::placeholder {
+  font-size: 20px;
+  color: rgba(37, 37, 37, 0.83);
+}
+input {
+  transition: all 0.5s ease;
+}
+input:hover {
+  background-color: rgb(158, 153, 151);
+  box-shadow: 5px 5px 10px rgb(69, 69, 69);
+}
+input:focus {
+  border: 2px solid rgb(223, 50, 28);
+}
+.error {
+  font-size: 12px;
+  color: orangered;
+  display: block;
+  padding-top: 5px;
+}

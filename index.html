@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+
+  <body>
+    <form action="POST" id="form1" novalidate>
+      <h1>FORM VALIDATION</h1>
+      <div class="form-body">
+        <div>
+          <label for="userName">User Name :</label>
+          <input type="text" placeholder="User Name" name="userName" required />
+        </div>
+        <div>
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            minlength="8"
+            required
+          />
+        </div>
+        <div>
+          <label for="eMail">E-Mail :</label>
+          <input type="email" placeholder="E-mail" name="email" required />
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" required />
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
