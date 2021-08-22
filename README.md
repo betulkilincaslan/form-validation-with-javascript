@@ -4,6 +4,10 @@
 
 - I developed an application that checks if the form is valid.
 
+### Live Demo :
+
+https://form-validation-with-javascript-app.netlify.app/
+
 ## Rules
 
 1- It will throw an error when the username, password and email are empty.
